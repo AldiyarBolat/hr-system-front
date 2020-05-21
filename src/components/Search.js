@@ -11,6 +11,7 @@ class Search extends React.Component{
   search = async val => {
     this.setState({ loading: true });
     const res = [{'name':'Sanzhar'},{'name':'Aldiyar'},{'name':'Adilkhan'},{'name':'Adlet'}];
+    console.log("ok");
     const staff = res;
     this.setState({ staff, loading: false });
   };

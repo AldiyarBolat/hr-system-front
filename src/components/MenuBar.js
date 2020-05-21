@@ -14,4 +14,4 @@ class MenuBar extends React.Component{
 	}
 }
 
-export default MenuBar
+export default MenuBar;
