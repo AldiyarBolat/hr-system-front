@@ -2,7 +2,8 @@ import React from 'react';
 import ProfilePicture from './ProfilePicture';
 import MenuBar from './MenuBar';
 import PersonalInfo from './PersonalInfo'
-import Search from './Search'
+import PersonToPositions from './PersonToPositions'
+
 
 class ProfilePage extends React.Component{
 	state = {
@@ -14,7 +15,8 @@ class ProfilePage extends React.Component{
 		return (
 			<div>
 				<MenuBar/>
-				<Search/>
+				<PersonalInfo/>
+				<PersonToPositions/>
 			</div>
 		)
 	}
