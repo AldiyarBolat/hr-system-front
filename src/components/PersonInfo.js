@@ -1,16 +1,14 @@
 import React from 'react';
+import PersonInfoItem from './PersonInfoItem'
+import mock_person_info from './mock_data';
 
 class PersonInfo extends React.Component{
 	render(){
+		const personInfoItems = mock_person_info.map(item => <PersonInfoItem item={item}/>)
 		return (
-			<div>
-				<h1>Анастасия Пастухова</h1>
-				<h3>Позиция: Дизайнер</h3>
-				<h3>Телефон: +748832832</h3>
-				<h3>Имейл: desighismydream@work.kz</h3>
-				<h3>Лет: 24 года</h3>
-				<h3>В компаний: 2008-2018</h3>
-			</div>
+			<ul>
+			  {personInfoItems}
+			</ul>
 		)
 	}
 }

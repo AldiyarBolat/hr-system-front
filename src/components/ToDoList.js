@@ -15,7 +15,6 @@ import to_do_list_data from './to_do_list_data'
 class ToDoList extends React.Component{
 	render(){
 		const toDoListItems = to_do_list_data.map(item => <ToDoItem key={item.id} item={item}/>)
-
 		return (
 			<ul>
 			  {toDoListItems}
@@ -24,4 +23,4 @@ class ToDoList extends React.Component{
 	}
 }
 
-export default ToDoList
+export default ToDoList;

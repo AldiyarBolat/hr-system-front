@@ -9,6 +9,7 @@ class PersonalInfo extends React.Component{
 			<div>
 
 				<div class="modal-body row">
+
 				  <div className="col-md-4">
 				  	<ProfilePicture/>
 				  </div>
@@ -16,8 +17,7 @@ class PersonalInfo extends React.Component{
 				  	<PersonInfo/>
 				  </div>
 				</div>
-				
-				
+
 			</div>
 		)
 	}
