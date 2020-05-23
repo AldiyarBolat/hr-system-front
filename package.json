@@ -10,7 +10,8 @@
     "mdbreact": "^4.26.1",
     "package.json": "^2.0.1",
     "react-bootstrap": "^1.0.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-timeline-scribble": "^1.0.14"
   },
   "scripts": {
     "start": "react-scripts start",

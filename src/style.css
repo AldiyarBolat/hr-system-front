@@ -1,6 +1,6 @@
 .avatar {
 	width: auto;
-    height: 500px;
+  height: 500px;
 }
 .personInfo{
 	margin-top: 10px;
@@ -12,7 +12,13 @@ h2.thick {
 h3.thick {
   font-weight: bold;
 }
+/*<<<<<<< HEAD*/
 .personToPosition{
 	margin-left: 15%;
 	margin-right: 15%;
 }
+/*=======
+>>>>>>> 0c3c05a941e106b91a7e19b3072498ded4613e97
+*/
+
+

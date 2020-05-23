@@ -4,7 +4,7 @@ import mock_person_info from './mock_data';
 
 class PersonInfo extends React.Component{
 	render(){
-		const personInfoItems = mock_person_info.map(item => <PersonInfoItem item={item}/>)
+		const personInfoItems = <PersonInfoItem item = {this.props.item}/>;
 		return (
 			<ul>
 			  {personInfoItems}
