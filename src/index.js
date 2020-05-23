@@ -4,7 +4,7 @@ import ProfilePage from './components/App';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-	BrouserRouter,
+	BrowserRouter,
 	Route,
 	Switch
 } from "react-router-dom";
