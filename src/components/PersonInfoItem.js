@@ -1,15 +1,17 @@
 import React from 'react';
+import ListGroup from 'react-bootstrap/ListGroup';
+
 class PersonInfoItem extends React.Component{
 	render(){
 		return (
             <div className="personInfo">
-                <h2>Name: {this.props.item.name}</h2>
-                <h3>Positon: {this.props.item.position}</h3>
-                <h3>Phone: {this.props.item.number}</h3>
-                <h3>Email: {this.props.item.email}</h3>
-                <h3>Age: {this.props.item.age}</h3>
-                <h3>Work since: {this.props.item.work_since}</h3>
-			</div>
+                <ListGroup.Item>Name: {this.props.item.name}</ListGroup.Item>
+                <ListGroup.Item>Positon: {this.props.item.position}</ListGroup.Item>
+                <ListGroup.Item>Phone: {this.props.item.number}</ListGroup.Item>
+                <ListGroup.Item>Email: {this.props.item.email}</ListGroup.Item>
+                <ListGroup.Item>Age: {this.props.item.age}</ListGroup.Item>
+                <ListGroup.Item>Work since: {this.props.item.work_since}</ListGroup.Item>
+						</div>
 		)
 	}
 }
