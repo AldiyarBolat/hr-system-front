@@ -12,14 +12,15 @@ class PersonalInfo extends React.Component{
 		for (var i = 0;i < personInfoProcessed.length;i ++) {
 			console.log(i);
 			picAndInfoMerged.push(<div class="modal-body row">
-															<div className="col-md-4">
-																{profilePictureProcessed[i]}
-															</div>
-															<div className="col-md-8">
-																{personInfoProcessed[i]}
-															</div>
-														</div>);
+									<div className="col-md-5">
+										{profilePictureProcessed[i]}
+									</div>
+									<div className="col-md-7">
+										{personInfoProcessed[i]}
+									</div>
+								  </div>);
 		}
+
 		return (
 			<div>
 				{picAndInfoMerged}

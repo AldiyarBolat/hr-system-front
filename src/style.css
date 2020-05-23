@@ -2,3 +2,13 @@
 	width: auto;
     height: 500px;
 }
+.personInfo{
+	margin-top: 10px;
+	line-height: 1.428571429;
+}
+h2.thick {
+  font-weight: bold;
+}
+h3.thick {
+  font-weight: bold;
+}
