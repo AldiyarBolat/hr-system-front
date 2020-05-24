@@ -3,22 +3,21 @@
   height: 500px;
 }
 .personInfo{
-	margin-top: 10px;
 	line-height: 1.428571429;
+	width: 60%;
 }
+.photoAndAbout{
+	margin-top: 20px;
+
+}
+.workHistory{
+	margin-top: 30px;
+}
+
+
 h2.thick {
   font-weight: bold;
 }
 h3.thick {
   font-weight: bold;
 }
-/*<<<<<<< HEAD*/
-.personToPosition{
-	margin-left: 15%;
-	margin-right: 15%;
-}
-/*=======
->>>>>>> 0c3c05a941e106b91a7e19b3072498ded4613e97
-*/
-
-
