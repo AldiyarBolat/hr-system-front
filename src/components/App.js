@@ -1,6 +1,6 @@
 import React from 'react'
-import ProfilePage from './ProfilePage'
-import SearchPage from './SearchPage'
+import ProfilePage from './profilePage/ProfilePage'
+import SearchPage from './searchPage/SearchPage'
 import MenuBar from './MenuBar'
 import {
   BrowserRouter,
@@ -11,7 +11,7 @@ import {
 
 
 
-class SearchPage extends React.Component{
+class App extends React.Component{
 	render(){
 		return (
 			<div className="app">
@@ -23,5 +23,5 @@ class SearchPage extends React.Component{
 	}
 }
 
-export default SearchPage
+export default App
  

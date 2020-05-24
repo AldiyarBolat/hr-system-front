@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ProfilePage from './components/App';
+import App from './components/App';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -9,11 +9,10 @@ import {
 	Switch
 } from "react-router-dom";
 
-// BrouserRouter from "react-router-dom/BrouserRouter";
 
 ReactDOM.render(
-  <BrouserRouter>
+  <BrowserRouter>
   	<App/>
-  </BrouserRouter>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
