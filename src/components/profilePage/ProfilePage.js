@@ -1,6 +1,5 @@
 import React from 'react';
 import ProfilePicture from './ProfilePicture';
-import PhotoAndAbout from './PhotoAndAbout'
 import WorkHistory from './WorkHistory'
 import PersonInfo from './PersonInfo';
 
