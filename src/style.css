@@ -1,19 +1,14 @@
 .avatar {
 	width: auto;
-  height: 500px;
+    height: 500px;
 }
 .personInfo{
 	line-height: 1.428571429;
-	width: 60%;
 }
 .photoAndAbout{
 	margin-top: 20px;
 
 }
-.workHistory{
-	margin-top: 30px;
-}
-
 
 h2.thick {
   font-weight: bold;
