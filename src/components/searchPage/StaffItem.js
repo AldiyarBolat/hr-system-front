@@ -4,9 +4,10 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 class StaffItem extends React.Component{
 	render(){
+		const host = "http://127.0.0.1:8000";
 		return (
 			<Card style={{ width: '18rem' }}>
-			  <Card.Img variant="top" src="https://i.stack.imgur.com/34AD2.jpg" />
+			  <Card.Img variant="top" src={host + this.props.item.profile_picture}/>
 			  <Card.Body>
 				<ListGroup variant="flush">
 					<ListGroup.Item>{this.props.item.name}</ListGroup.Item>
