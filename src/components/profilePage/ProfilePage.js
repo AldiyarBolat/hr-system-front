@@ -12,12 +12,11 @@ class ProfilePage extends React.Component{
 	constructor(props) {
 	    super(props);
 	    this.state = {
-	      person: "hello",
+	      person: "",
 	    };
     }
 
     componentDidMount(){
-    	console.log("i am here")
     	fetch("http://127.0.0.1:8000/api/view_staff/?staff_id=1")
 		.then(res => res.json())
 		.then(
