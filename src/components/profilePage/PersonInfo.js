@@ -6,7 +6,7 @@ class PersonInfo extends React.Component{
 	render(){
 		return (
 			<div className="personInfo">
-                <ListGroup.Item>Name: {this.props.item.name}</ListGroup.Item>
+                <ListGroup.Item>Name: {this.props.item.name + ' ' + this.props.item.lastname}</ListGroup.Item>
                 <ListGroup.Item>Positon: {this.props.item.position}</ListGroup.Item>
                 <ListGroup.Item>Phone: {this.props.item.number}</ListGroup.Item>
                 <ListGroup.Item>Email: {this.props.item.email}</ListGroup.Item>
