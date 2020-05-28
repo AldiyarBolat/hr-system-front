@@ -35,7 +35,7 @@ class Search extends React.Component{
     this.setState({ value: e.target.value });
   };
   get renderStaff() {
-    let staff = <h1>There's no staff</h1>;
+    let staff = <h1>Enter staff name to search</h1>;
     if (this.state.staff) {
       staff = <Staff list={this.state.staff} />;
     }
@@ -44,20 +44,24 @@ class Search extends React.Component{
 	render(){
 		return (
       <div>
-      <MDBCol md="6">
-      <div className="input-group md-form form-sm form-1 pl-0">
-        <div className="input-group-prepend">
-          <span className="input-group-text purple lighten-3" id="basic-text1">
-            <MDBIcon className="text-white" icon="search" />
-          </span>
+        <center>
+          <MDBCol md="6">
+            <div className="input-group md-form form-sm form-1 pl-0">
+              <div className="input-group-prepend">
+                <span className="input-group-text purple lighten-3" id="basic-text1">
+                  <MDBIcon className="text-white" icon="search" />
+                </span>
+              </div>
+              <input className="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search"
+              value={this.state.value}
+              onChange={e => this.onChangeHandler(e)}
+              placeholder="Type something to search"/>
+            </div>
+          </MDBCol>
+        </center>
+        <div id = "search_result">
+          {this.renderStaff}
         </div>
-        <input className="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search"
-        value={this.state.value}
-        onChange={e => this.onChangeHandler(e)}
-        placeholder="Type something to search"/>
-      </div>
-    </MDBCol>
-      {this.renderStaff}
       </div>
 		)
 	}
