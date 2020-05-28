@@ -5,9 +5,9 @@ class MenuBar extends React.Component{
 	render(){
 		return (
 			<Navbar bg="dark" variant="dark">
-			    <Navbar.Brand href="#home">Лого</Navbar.Brand>
+			    <Navbar.Brand href="/">Лого</Navbar.Brand>
 			    <Nav className="mr-auto">
-			      <Nav.Link href="#home">Поиск</Nav.Link>
+			      <Nav.Link href="/">Поиск</Nav.Link>
 			    </Nav>
 			  </Navbar>
 		)

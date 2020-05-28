@@ -4,25 +4,18 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 class PersonInfo extends React.Component{
 
-	constructor(props) {
-	    super(props);
-	    
-    }
-
-    componentDidMount(){
-    	
-    }
-
 	render(){
+		if (this.props.item.positions == null) return <h1>Loading ...</h1>;
+
 		return (
 			<div className="personInfo">
-				{console.log(this.props.positions)}
+				{console.log(this.props.item.positions[0].start_date)}
                 <ListGroup.Item>Name: {this.props.item.name + ' ' + this.props.item.lastname}</ListGroup.Item>
                 <ListGroup.Item>Positon: {this.props.item.position}</ListGroup.Item>
                 <ListGroup.Item>Phone: {this.props.item.phone_number}</ListGroup.Item>
                 <ListGroup.Item>Email: {this.props.item.email}</ListGroup.Item>
                 <ListGroup.Item>Age: {this.props.item.age}</ListGroup.Item>
-                <ListGroup.Item>Work since: {this.props.item.work_since}</ListGroup.Item>
+                <ListGroup.Item>Work since: {this.props.item.positions[0].start_date}</ListGroup.Item>
 			</div>
 		)
 	}
