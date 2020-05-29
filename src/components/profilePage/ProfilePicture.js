@@ -1,11 +1,14 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+
 
 class ProfilePicture extends React.Component{
 	render(){
+		const host = "http://127.0.0.1:8000";
+
 		return (
 			<div class="float-right">
-				{/*<img className="avatar" src={this.props.person.profile_picture}/>*/}  
-				<img className="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+				<img className="avatar" src={host + this.props.person.profile_picture}/>
 			</div>
 		)
 	}
