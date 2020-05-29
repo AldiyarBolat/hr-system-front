@@ -1,11 +1,15 @@
 import React from 'react';
-import mock_person_info from './mock_data';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 class PersonInfo extends React.Component{
 
 	render(){
 		if (this.props.item.positions == null) return <h1>Loading ...</h1>;
+
+		const workSince = this.props.item.positions[2].start_date[0] + 
+						  this.props.item.positions[2].start_date[1] +
+						  this.props.item.positions[2].start_date[2] + 
+						  this.props.item.positions[2].start_date[3]
 
 		return (
 			<div className="personInfo">
@@ -15,7 +19,7 @@ class PersonInfo extends React.Component{
                 <ListGroup.Item>Phone: {this.props.item.phone_number}</ListGroup.Item>
                 <ListGroup.Item>Email: {this.props.item.email}</ListGroup.Item>
                 <ListGroup.Item>Age: {this.props.item.age}</ListGroup.Item>
-                <ListGroup.Item>Work since: {this.props.item.positions[2].start_date}</ListGroup.Item>
+                <ListGroup.Item>Work since: {workSince}</ListGroup.Item>
 			</div>
 		)
 	}

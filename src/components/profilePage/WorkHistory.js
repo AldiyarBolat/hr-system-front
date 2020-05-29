@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import { Timeline, Event } from "react-timeline-scribble";
 import WorkHistoryPosition from './WorkHistoryPosition'
-import work_history_mock from './work_history_mock'
 
 
 class WorkHistory extends React.Component{

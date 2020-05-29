@@ -2,10 +2,6 @@ import React from 'react';
 import ProfilePicture from './ProfilePicture';
 import WorkHistory from './WorkHistory'
 import PersonInfo from './PersonInfo';
-import axios from 'axios';
-
-import mock_person_info from './mock_data'
-import image_src_mock from './image_src_mock';
 
 
 class ProfilePage extends React.Component{
