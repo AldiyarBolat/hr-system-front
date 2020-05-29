@@ -38,13 +38,13 @@ class ProfilePage extends React.Component{
 			<div className="container-fluid photoAndAbout align-self-center">
 			  <div className="row">
 			    <div className="col-sm-3 col-md-6 col-lg-3">
-			    	<ProfilePicture picInfo={image_src_mock[0]}/>
+			    	<ProfilePicture person={this.state.person}/>
 			    </div>
 			    <div className="col-sm-9 col-md-6 col-lg-4">
 			    	<PersonInfo item={this.state.person}/>
 			    </div>
 			    <div className="col-sm-9 col-md-6 col-lg-5">
-			    	<WorkHistory/>
+			    	<WorkHistory workHistory={this.state.person.positions}/>
 			    </div>
 			  </div>
 			</div>

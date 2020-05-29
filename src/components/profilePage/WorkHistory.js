@@ -7,7 +7,11 @@ import work_history_mock from './work_history_mock'
 class WorkHistory extends React.Component{
 	
 	render(){
-		const workHistoryComponents = work_history_mock.map(item => <WorkHistoryPosition item={item}/>)
+		if (this.props.workHistory == null) return <h1>Loading ...</h1>;
+
+		const workHistoryComponents = this.props.workHistory.map(workInterval =>
+		 <WorkHistoryPosition workInterval={workInterval}/>)
+
 		return (
 			<div class="d-flex justify-content-center workHistory">
 				<Fragment >

@@ -16,6 +16,4 @@ const work_history_mock = [
   }
 ]
 
-export default work_history_mock;
-
-
+export default work_history_mock
